@@ -7,13 +7,15 @@
 <title>First Page</title>
 </head>
 <body>
-Hello
-Whats up ??
-int i=5;
-<%
-	System.out.println("Whats up ??");
-	int i=5*5;
-%>
-<%=i %>
+<h3>File Upload:</h3>
+Select a file to upload: <br />
+<form action="${pageContext.servletContext.contextPath}/UploadServlet" method="post"
+                        enctype="multipart/form-data">
+<input type="file" name="file" size="70" />
+<br />
+<input type="submit" value="Upload File" />
+</form>
+
+
 </body>
 </html>

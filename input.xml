@@ -1,0 +1,26 @@
+<circuit>
+<outputpoint id="1" lable="S">
+	<inputsource type="gate" id="5" />
+</outputpoint>
+<outputpoint id="2" lable="C">
+	<inputsource type="gate" id="4" />
+</outputpoint>
+<gate id="5" type="NAND">
+	<inputsource type="gate" id="2"/>
+	<inputsource type="gate" id="3" />
+</gate>
+<gate id="4" type="NAND">
+	<inputsource type="gate" id="1" />
+	<inputsource type="gate" id="1" />
+</gate>
+<gate id="2" type="NAND">
+	<inputsource type="inputpoint" id="1" />
+	<inputsource type="gate" id="1" />
+</gate>
+<gate id="3" type="NAND">
+	<inputsource  type="inputpoint" id="2" />
+	<inputsource type="gate" id="1" />
+</gate>
+	<inputpoint id="1" label="A" />
+	<inputpoint id="2" label="B" />
+</circuit>
